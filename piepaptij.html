@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Piedra, Papel o Tijera</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Piedra, papel o tijera - Versión Clásica</h1>
+    <h4>Elige tu jugada en los botones de la izquierda</h4>
+  </header>
+
+  <main>
+    <div id="columna1">
+      <div id="botones">
+        <button id="btnpiedra"><img src="imagenes/piedra.png" alt="piedra"></button>
+        <button id="btnpapel"><img src="imagenes/papel.png" alt="papel"></button>
+        <button id="btntijera"><img src="imagenes/tijera.png" alt="tijera"></button>
+      </div>
+    </div>
+    <div id="columna2">
+      <br>
+      <br>
+    </div>
+    <div id="columna3">
+      <table class="default">
+        <tr>
+          <th>Ganados</th>
+          <th>Perdidos</th>
+          <th>Jugados</th>
+        </tr>
+        <tr>
+          <td id="ganados">0</td>
+          <td id="perdidos">0</td>
+          <td id="jugados" rowspan="3">0</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

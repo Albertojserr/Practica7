@@ -1,0 +1,153 @@
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+body {
+    padding: 0px 20px;
+    background-color: #cacaca;
+}
+
+  /* Header */
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 30px 0;
+}
+
+  /* Form */
+
+main {
+    text-align: center;
+    margin: 30px 0px 0px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+select{
+    /*width:100px;*/
+    height: 59px;
+    width: 90px;
+}
+input, button {
+    padding: 20px;
+}
+button {
+    border: none;
+    /*width: 30px;*/
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+}
+#botones{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.default{
+    padding: 0px 20px;
+}
+  /* Results */
+
+div.results {
+    padding: 30px;
+}
+
+td{
+    background-color: #303030;
+    color: rgb(255, 255, 255);
+}
+
+td::first-letter {
+    text-transform: uppercase;
+}
+h2{
+    font-size: 48px;
+}
+p{
+    font-size: 24px;
+}
+.btnrojo{
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+}
+.btnverde{
+    background-color: rgb(0, 255, 0);
+    border-radius: 15px;
+}
+.btnazul{
+    background-color: rgb(0, 0, 255);
+    border-radius: 15px;
+}
+.btnamarillo{
+    background-color: rgb(255, 255, 0);
+    border-radius: 15px;
+}
+.btnnegro{
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.btnblanco{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.btnoculto{
+    background-color: rgb(198, 88, 61);
+    border-radius: 15px;
+}
+.caja{
+    background-color: rgb(198, 88, 61);
+    border:3px ;
+    border-bottom-width: 2px;
+    border-top-width: 3px;
+    border-style: solid;
+    border-color: brown;
+    display: flex;
+
+}
+.aciertos{
+    border:3px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: brown;
+}
+.Eleccion{
+    border-radius: 15px;
+}
+#columna3{
+    width: 20%;
+}
+#columna3 p{
+    font-size: 12px;
+}
+
+@media(max-width:800px){
+    main{
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+    #columna3{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #columna1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #columna2{
+        order:-1;
+        margin-top: 10px;
+    }
+    .caja{
+        display:flex;
+        justify-content: center;
+
+    }
+}

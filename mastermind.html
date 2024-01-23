@@ -1,0 +1,77 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mastermind</title>
+    <link href="./css/stylemm.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Mastermind - Versión Clásica</h1>
+        <h4>Intenta adivinar la combinación de la máquina</h4>
+    </header>
+
+    <main>
+        <div id="columna1">
+            <p>Combinación ganadora</p>
+            <div>
+                <!--Creamos unos botones donde cuando aciertes aparecerá la combinación ganadora-->
+                <button id="btnoculto0" class="btnoculto"></button>
+                <button id="btnoculto1" class="btnoculto"></button>
+                <button id="btnoculto2" class="btnoculto"></button>
+                <button id="btnoculto3" class="btnoculto"></button>
+            </div>
+            <p></p>
+        </div>
+        <div id="columna2">
+            <button id="Send">Confirme su predicción</button>
+            <!--Creamos las opciones para elegir colores-->
+            <div class="caja">
+                <select class="Eleccion1">
+                    <option value="rojo">rojo</option>
+                    <option value="verde">verde</option>
+                    <option value="azul">azul</option>
+                    <option value="amarillo">amarillo</option>
+                    <option value="negro">negro</option>
+                    <option value="blanco">blanco</option>
+                </select>
+                <select class="Eleccion2">
+                    <option value="rojo">rojo</option>
+                    <option value="verde">verde</option>
+                    <option value="azul">azul</option>
+                    <option value="amarillo">amarillo</option>
+                    <option value="negro">negro</option>
+                    <option value="blanco">blanco</option>
+                </select>
+                <select class="Eleccion3">
+                    <option value="rojo">rojo</option>
+                    <option value="verde">verde</option>
+                    <option value="azul">azul</option>
+                    <option value="amarillo">amarillo</option>
+                    <option value="negro">negro</option>
+                    <option value="blanco">blanco</option>
+                </select>
+                <select class="Eleccion4">
+                    <option value="rojo">rojo</option>
+                    <option value="verde">verde</option>
+                    <option value="azul">azul</option>
+                    <option value="amarillo">amarillo</option>
+                    <option value="negro">negro</option>
+                    <option value="blanco">blanco</option>
+                </select>
+            </div>
+        </div>
+        <div id="columna3">
+            <h3>Instrucciones</h3>
+            <p>La máquina eligirá una combinación de 4 colores que se pueden repetir entre ellos.</p>
+                <p>Debes intentar adivinar esa combinación en un máximo de 10 intentos.</p>
+                <p>Después de cada intento se mostrará una combinación de fichas negras y blancas que indicarán los aciertos que hayas tenido.</p>
+                <p>Una ficha negra indica que has acertado la posición de un color mientras que la blanca indica que has acertado un color pero no en la posición correcta.</p>
+                <p>Una vez finalizado el juego se mostrará la combinación de la máquina y el tiempo que has tardado.</p>
+        </div>
+    </main>
+
+    <script src="js/scriptmm.js"></script>
+</body>
+
+</html>

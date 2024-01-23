@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Piedra, papel, tijera, lagarto o Spock</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Piedra, papel, tijera, lagarto o Spock - Versión Dificil</h1>
+    <h4>Elige tu jugada en los botones de la izquierda</h4>
+  </header>
+
+  <main>
+    <div id="columna1">
+      <div id="botones">
+        <!--Ponemos los botones que mandan cada jugada-->
+        <button id="btnpiedra"><img src="imagenes/piedra.png"></button>
+        <button id="btnpapel"><img src="imagenes/papel.png"></button>
+        <button id="btntijera"><img src="imagenes/tijera.png"></button>
+        <button id="btnlagarto"><img src="imagenes/lagarto.png"></button>
+        <button id="btnspock"><img src="imagenes/spock.png"></button>
+      </div>
+    </div>
+    <div id="columna2">
+      <br>
+      <br>
+    </div>
+    <div id="columna3">
+      <table class="default">
+        <!--Creamos una tabla en la que aparecerán el numero de victorias, derrotas y de juegos, iremos añadiendo cada
+        jugada y si ganas, pierdes o empatas-->
+        <tr>
+          <th>Ganados</th>
+          <th>Perdidos</th>
+          <th>Jugados</th>
+        </tr>
+        <tr>
+          <td id="ganados">0</td>
+          <td id="perdidos">0</td>
+          <td id="jugados" rowspan="3">0</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/script1.js"></script>
+</body>
+
+</html>
